@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu container">
+      <a href="#" class="logo"></a>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="img/menu.png" class="menu-icono" alt="menu">
+      </label> 
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>      
+    </div>
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>Medical center</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero numquam ab consequatur a delectus? Laborum doloremque, est sunt ipsa exercitationem facere! Reprehenderit, voluptatum excepturi. Sit voluptatem animi dolorum laboriosam!</p>
+        <a href="#" class="btn-1">Informacion</a>
+      </div>
+      <div class="header-img">
+        <img src="img/left.png" alt="">
+      </div>
+    </div>
+
+  </header>
+    <section class="about container">
+      <div class="about-png">
+        <img src="img/about.png" alt="">
+      </div>
+      <div class="about-txt">
+        <h2>Nostros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit quos eaque pariatur perferendis quam atque minima similique ab officia. Incidunt praesentium dolorum voluptates labore nemo autem sunt. Unde, omnis!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium quam fugit dolores praesentium voluptates! Consequatur quasi sit enim, perferendis, numquam facere sed laborum voluptatum debitis eum maiores a nam!</p>
+      </div>
+
+    </section>
+    <main class="services">
+      <h2>Servicios</h2>
+      <div class="servicios-content container">
+        <div class="servicio-1">
+          <i class="fa-sharp fa-solid fa-hospital-user"></i>
+          <h3>pediatria</h3>
+        </div>
+        <div class="servicio-1">
+          <i class="fa-sharp fa-solid fa-stethoscope"></i>
+          <h3>pediatria</h3>
+        </div>
+
+        <div class="servicio-1">
+          <i class="fa-solid fa-hospital"></i>
+          <h3>cardiologia</h3>
+        </div>
+      </div>
+    </main>
+    <section class="formulario container">
+      <form method="post" autocomplete="off">
+        <h2>Agenda Consulta</h2>
+        <div class="input-group">
+
+          <div class="input-container">
+            <input type="text" name="name" placeholder="Nombre y apellido">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <div class="input-container">
+            <input type="tel" name="phone" placeholder="Telefono Celular">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div class="input-container">
+            <input type="email" name="email" placeholder="Correo">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-container">
+            <textarea name="message" placeholder="Detalles de la consulta"></textarea>
+          </div>
+          <input type="submit" name="send" class="btn" onclick="myFuction()">
+
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+
+      <div class="footer-content container">
+        <div class="link">
+          <a href="#" class="logo">Logo</a>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </footer>
+    <?php
+      include("send.php");
+    ?>
+    <script>
+      function myFuction(){
+        window.location.href="http://localhost/tesis"
+      }
+    </script>
+</body>
+</html>
